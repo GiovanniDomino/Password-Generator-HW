@@ -94,7 +94,7 @@ function generatePassword() {
 // Write password to the #password input
 function writePassword() {
   generatePassword();
-  document.getElementById('password').placeholder = finalPassword;
+  document.getElementById('password').textContent = finalPassword;
 
   passwordText.value = password;
 }
